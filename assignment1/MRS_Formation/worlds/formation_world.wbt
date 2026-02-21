@@ -1,0 +1,61 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5907622993945368 0.5863480121828681 0.5542525725905826 2.135740441989764
+  position -0.03707002960911835 0.4271829299597672 3.7176016897795883
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+E-puck {
+  hidden position_0_0 2581.56026028192
+  hidden position_0_1 3515.3304440830475
+  hidden linearVelocity_0 0.044407856276592585 -0.05412375706926891 -5.356974811727284e-09
+  hidden angularVelocity_0 -1.522679908694539e-07 -6.404611222803395e-07 0.3513866166548419
+  hidden rotation_1 0 1 0 5.454284338289454
+  hidden linearVelocity_1 0.038609246003400405 -0.047061930027285384 -5.032014493974645e-09
+  hidden angularVelocity_1 2.3183105469592045 1.9040968100330986 0.3603123433639785
+  hidden rotation_2 0 -1 0 3.253327937520931
+  hidden linearVelocity_2 0.05020557994425303 -0.0611898732794215 5.4990953568386974e-09
+  hidden angularVelocity_2 3.09254600229107 2.5369934328362653 0.36472456042877544
+  translation -0.20283525824749468 -0.11097266862485138 -7.086185191755925e-05
+  rotation -0.0011053988986627283 -0.00018651274941080303 0.9999993716529372 -0.8765089752816424
+  name "leader"
+  controller "leader_controller"
+  turretSlot [
+    GPS {
+    }
+  ]
+}
+E-puck {
+  hidden position_0_0 250.9959955498399
+  hidden position_0_1 941.8536872322719
+  hidden linearVelocity_0 -0.02547229390308801 -0.06518371402968445 5.179501769714616e-08
+  hidden angularVelocity_0 6.237902486253509e-06 1.7582618486859494e-06 0.3410946877735641
+  hidden rotation_1 0 -1 0 0.33141673734355465
+  hidden linearVelocity_1 -0.022246770419221983 -0.056921204242047184 -3.12676105895944e-08
+  hidden angularVelocity_1 2.8096060830388745 -1.09633433491939 0.34982503125635445
+  hidden rotation_2 0 -1 0 0.6241088446660622
+  hidden linearVelocity_2 -0.028701459847394938 -0.07344774654195614 3.0107706683327736e-08
+  hidden angularVelocity_2 3.7107732075026516 -1.4503159312518705 0.35397497891786417
+  translation -0.23803201635177842 0.09431352179942787 -7.046020565198464e-05
+  rotation -0.0005491411497574921 0.00018065997450338555 0.9999998329029716 -1.9363472339242485
+  name "follower"
+  controller "follower_controller"
+  turretSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
